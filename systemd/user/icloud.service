@@ -1,0 +1,14 @@
+[Unit]
+Description=iCloud Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rclone mount icloud: %h/iCloud --vfs-cache-mode full --vfs-cache-max-size 5g --poll-interval 1m --dir-cache-time 1m --poll-interval 1m --umask 022
+ExecStop=/bin/fusermount -u %h/iCloud
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

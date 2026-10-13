@@ -1,0 +1,160 @@
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 16px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+/* ==========================================
+   Waybar
+   ========================================== */
+
+window#waybar {
+    background: rgba(0, 0, 0, 0.3);
+    color: #ebdbb2;
+
+    border: 1px solid rgba(235,219,178,0.08);
+    border-top-color: rgba(251,241,199,0.12);
+
+    border-radius: 8px;
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.04);
+}
+
+/* ==========================================
+   Capsule base
+   ========================================== */
+
+#workspaces,
+#window,
+#tray,
+#pulseaudio,
+#battery,
+#clock {
+    background: rgba(0,0,0,0.35);
+
+    border: 1px solid rgba(235,219,178,0.10);
+    border-top-color: rgba(251,241,199,0.18);
+
+    border-radius: 999px;
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.08),
+        0 0 8px rgba(0,0,0,0.20);
+
+    padding: 0 6px;
+    margin-left: 8px;
+}
+
+/* ==========================================
+   Workspaces
+   ========================================== */
+
+#workspaces {
+    margin-left: 8px;
+}
+
+#workspaces button {
+    background: transparent;
+    color: #665c54;
+
+    font-size: 9px;
+
+    padding: 0 2px;
+    margin: 0;
+    min-width: 10px;
+
+    transition: color .15s ease;
+}
+
+#workspaces button:hover {
+    color: #fabd2f;
+}
+
+#workspaces button.active {
+    color: #ebdbb2;
+}
+
+/* ==========================================
+   Window
+   ========================================== */
+
+#window {
+    color: #ebdbb2;
+    padding: 0 14px;
+}
+
+/* ==========================================
+   Audio
+   ========================================== */
+
+#pulseaudio {
+    color: #d79921;
+}
+
+#pulseaudio.muted {
+    color: #cc241d;
+}
+
+/* ==========================================
+   Battery
+   ========================================== */
+
+#battery {
+    color: #d79921;
+    transition: color .3s;
+}
+
+#battery.critical {
+    color: #cc241d;
+}
+
+#battery.warning {
+    color: #fb4934;
+}
+
+#battery.medium {
+    color: #fe8019;
+}
+
+#battery.high,
+#battery.full,
+#battery.charging {
+    color: #d79921;
+}
+
+/* ==========================================
+   Clock
+   ========================================== */
+
+#clock {
+    color: #ebdbb2;
+}
+
+/* ==========================================
+   Tray
+   ========================================== */
+
+#tray {
+    color: #a89984;
+    font-size: 11px;
+    margin-right: 16px;
+}
+
+/* ==========================================
+   Tooltip
+   ========================================== */
+
+tooltip {
+    background: rgba(29,32,33,0.95);
+
+    border: 1px solid rgba(235,219,178,0.10);
+
+    border-radius: 10px;
+}
+
+tooltip label {
+    color: #ebdbb2;
+}

@@ -1,0 +1,153 @@
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font";
+    font-size: 12px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0.50);
+    color: #edbdb2;
+    border-radius: 1;
+}
+
+/* Workspaces */
+
+#workspaces {
+    background: rgba(255,255,255,0.045);
+
+    border: 1px solid rgba(255,255,255,0.10);
+
+    border-top-color: rgba(255,255,255,0.18);
+
+    border-radius: 999px;
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.10),
+        0 0 12px rgba(255,255,255,0.04);
+
+    padding: 0 12px;
+    margin-left: 8px;
+}
+
+#workspaces button {
+    background: transparent;
+    color: rgba(146, 131, 116, 0.45);
+    padding: 0 2px;
+    margin: 0px;
+    min-width: 10px;
+    font-size: 9px;
+    transition: color 150ms ease;
+}
+
+#workspaces button:hover {
+    color: #fabd2f;
+}
+
+#workspaces button.active {
+    color: #ebdbb2;
+}
+
+/* Window */
+
+#window {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 380px;
+    color: #ebdbb2;
+    background: rgba(255,255,255,0.045);
+
+    border: 1px solid rgba(255,255,255,0.10);
+
+    border-top-color: rgba(255,255,255,0.18);
+
+    border-radius: 999px;
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.10),
+        0 0 12px rgba(255,255,255,0.04);
+
+}
+
+/* Right side spacing */
+
+#pulseaudio,
+#battery,
+#clock,
+#tray {
+    background: rgba(255,255,255,0.045);
+
+    border: 1px solid rgba(255,255,255,0.10);
+
+    border-top-color: rgba(255,255,255,0.18);
+
+    border-radius: 999px;
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.10),
+        0 0 12px rgba(255,255,255,0.04);
+
+    padding: 0 12px;
+    margin-left: 8px;
+}
+
+/* Audio */
+tooltip {
+    background: rgba(29, 32, 33, 0.85);
+    border: 1px solid rgba(60, 56, 54, 0.7);
+    border-radius: 10px;
+}
+
+tooltip label {
+    color: #ebdbb2;
+}
+
+#pulseaudio {
+    color: #d79921;
+}
+
+#pulseaudio.muted {
+    color: #cc241d;
+}
+
+/* Battery */
+
+#battery {
+    color: #d79921;
+    transition: color .3s ease;
+}
+
+#battery.critical {
+    color: #cc241d;
+}
+
+#battery.warning {
+    color: #fb4934;
+}
+
+#battery.medium {
+    color: #fe8019;
+}
+
+#battery.high,
+#battery.full,
+#battery.charging {
+    color: #d79921;
+}
+
+/* Clock */
+
+#clock {
+    color: #ebdbb2;
+}
+
+/* Tray */
+
+#tray {
+    color: #a89984;
+    margin-right: 16px;
+}
+
+/* Tooltip */
+
